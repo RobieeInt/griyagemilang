@@ -9,6 +9,7 @@ use App\Models\ProductGalleries;
 use App\Models\ProductCategories;
 use App\Http\Controllers\Controller;
 use Yajra\DataTables\Facades\DataTables;
+use Intervention\Image\Facades\Image;
 
 class ProductController extends Controller
 {
@@ -162,11 +163,17 @@ class ProductController extends Controller
     public function uploadImage(Request $request) {
         $image = $request->file('file');
         $imageName = rand(). '.'. $image->getClientOriginalExtension();
-        // $image->move(public_path('product'),$imageName);
-        // $data['image'] = $request->file('image')->store('assets/product', 'public');
-        $image->move(public_path('storage/assets/product'),$imageName);
-        // $imageNameStore set assets/prodcuct $imageName
+         //resize image
+        $image_resize = Image::make($image->getRealPath());
+        //resize dimension 282x295
+        $image_resize->resize(282, 295);
+        //save image
+        $image_resize->save(public_path('storage/assets/product/'.$imageName));
         $imageNameStore = 'assets/product/'.$imageName;
+
+
+        // $image->move(public_path('storage/assets/product'),$imageName);
+        // $imageNameStore = 'assets/product/'.$imageName;
 
 
 

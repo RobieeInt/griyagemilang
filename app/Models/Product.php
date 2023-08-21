@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\ProductGalleries;
 use App\Models\ProductCategories;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -30,12 +31,9 @@ class Product extends Model
         return $this->belongsTo(ProductCategories::class);
     }
 
-    //productGalleries
     public function galleries()
     {
-        return $this->hasMany(ProductGalleries::class)->where('status','active');
+        return $this->hasMany(ProductGalleries::class, 'product_id');
     }
-
-
 
 }

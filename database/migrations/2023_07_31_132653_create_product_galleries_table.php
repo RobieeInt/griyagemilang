@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('image');
             // $table->enum('is_default',['yes','no'])->default('no');
             $table->integer('is_default')->default(0);
-            $table->enum('status',['active','inactive'])->default('active');
+            // $table->enum('status',['active','inactive'])->default('active');
+            $table->integer('status')->default(1);
             $table->softDeletes();
             $table->timestamps();
         });

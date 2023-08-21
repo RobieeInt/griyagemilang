@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LandingController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\LoginController;
 use App\Http\Controllers\Admin\ProductController;
@@ -22,7 +23,10 @@ use App\Http\Controllers\Admin\TestimonialController;
 //     return view('welcome');
 // });
 
-Route::view('/', 'index');
+// Route::view('/', 'index');
+
+
+Route::get('/', [LandingController::class, 'index'])->name('landing-page');
 
 
 Route::get('admin/login', [LoginController::class,'index'])->name('admin.login');

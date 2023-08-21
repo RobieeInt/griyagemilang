@@ -55,6 +55,11 @@
                                 value="{{ $data->price }}" placeholder="10000">
                         </div>
                         <div class="form-group">
+                            <label for="old_price">Harga Lama</label>
+                            <input type="number" class="form-control" id="old_price" name="old_price"
+                                value="{{ $data->old_price }}" placeholder="10000">
+                        </div>
+                        <div class="form-group">
                             <label for="short_description">Deskripsi</label>
                             <input type="text" class="form-control" id="short_description" name="short_description"
                                 value="{{ $data->short_description }}" placeholder="Terbuat Dari Aluminium">
