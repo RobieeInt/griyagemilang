@@ -77,7 +77,7 @@
                     </a>
                 </div>
                 <div class="main__logo">
-                    <h1 class="main__logo--title"><a class="main__logo--link" href="index.html"><img
+                    <h1 class="main__logo--title"><a class="main__logo--link" href="{{ route('landing-page') }}"><img
                                 class="main__logo--img" src="{{ asset('ggm/assets/img/logo/nav-log2.png') }}"
                                 alt="logo-img"></a>
                     </h1>
@@ -195,18 +195,18 @@
                         <nav class="header__menu--navigation">
                             <ul class="d-flex justify-content-center">
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="index.html">Home <span
-                                            class="menu__plus--icon">+</span></a>
-                                    <ul class="header__sub--menu">
-                                        <li class="header__sub--menu__items"><a href="index.html"
+                                    <a class="header__menu--link" href="{{ route('landing-page') }}">Home</a>
+                                    {{-- <span class="menu__plus--icon">+</span> --}}
+                                    {{-- <ul class="header__sub--menu">
+                                        <li class="header__sub--menu__items"><a href="{{ route('landing-page') }}"
                                                 class="header__sub--menu__link">Home One</a></li>
                                         <li class="header__sub--menu__items"><a href="index-2.html"
                                                 class="header__sub--menu__link">Home Two</a></li>
                                         <li class="header__sub--menu__items"><a href="index-3.html"
                                                 class="header__sub--menu__link">Home Three</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>
-                                <li class="header__menu--items mega__menu--items">
+                                {{-- <li class="header__menu--items mega__menu--items">
                                     <a class="header__menu--link" href="shop.html">Shop <span
                                             class="menu__plus--icon">+</span></a>
                                     <ul class="header__mega--menu d-flex">
@@ -292,14 +292,14 @@
                                             </ul>
                                         </li>
                                     </ul>
+                                </li> --}}
+                                <li class="header__menu--items">
+                                    <a class="header__menu--link" href="{{ route('aboutus') }}">About Us </a>
                                 </li>
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="about.html">About US </a>
-                                </li>
-                                <li class="header__menu--items">
-                                    <a class="header__menu--link" href="blog.html">Blog <span
+                                    <a class="header__menu--link" href="{{ route('blog') }}">Blog <span
                                             class="menu__plus--icon">+</span> </a>
-                                    <ul class="header__sub--menu">
+                                    {{-- <ul class="header__sub--menu">
                                         <li class="header__sub--menu__items"><a href="blog.html"
                                                 class="header__sub--menu__link">Blog Grid</a></li>
                                         <li class="header__sub--menu__items"><a href="blog-details.html"
@@ -308,9 +308,9 @@
                                                 class="header__sub--menu__link">Blog Left Sidebar</a></li>
                                         <li class="header__sub--menu__items"><a href="blog-right-sidebar.html"
                                                 class="header__sub--menu__link">Blog Right Sidebar</a></li>
-                                    </ul>
+                                    </ul> --}}
                                 </li>
-                                <li class="header__menu--items">
+                                {{-- <li class="header__menu--items">
                                     <a class="header__menu--link" href="#">Pages <span
                                             class="menu__plus--icon">+</span></a>
                                     <ul class="header__sub--menu">
@@ -329,9 +329,9 @@
                                         <li class="header__sub--menu__items"><a href="404.html"
                                                 class="header__sub--menu__link">Error Page</a></li>
                                     </ul>
-                                </li>
+                                </li> --}}
                                 <li class="header__menu--items">
-                                    <a class="header__menu--link" href="contact.html">Contact </a>
+                                    <a class="header__menu--link" href="{{ route('contactus') }}">Contact </a>
                                 </li>
                             </ul>
                         </nav>
@@ -346,7 +346,7 @@
     <div class="offcanvas__header color-scheme-2" tabindex="-1">
         <div class="offcanvas__inner">
             <div class="offcanvas__logo">
-                <a class="offcanvas__logo_link" href="index.html">
+                <a class="offcanvas__logo_link" href="{{ route('landing-page') }}">
                     <img src="{{ asset('ggm/assets/img/logo/nav-log2.webp') }}" alt="Furea Logo">
                 </a>
                 <button class="offcanvas__close--btn" aria-label="offcanvas close btn">close</button>
@@ -354,9 +354,9 @@
             <nav class="offcanvas__menu">
                 <ul class="offcanvas__menu_ul">
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="index.html">Home</a>
+                        <a class="offcanvas__menu_item" href="{{ route('landing-page') }}">Home</a>
                         <ul class="offcanvas__sub_menu">
-                            <li class="offcanvas__sub_menu_li"><a href="index.html"
+                            <li class="offcanvas__sub_menu_li"><a href="{{ route('landing-page') }}"
                                     class="offcanvas__sub_menu_item">Home One</a></li>
                             <li class="offcanvas__sub_menu_li"><a href="index-2.html"
                                     class="offcanvas__sub_menu_item">Home Two</a></li>
@@ -541,7 +541,7 @@
     <div class="offcanvas__stikcy--toolbar color-scheme-2" tabindex="-1">
         <ul class="d-flex justify-content-between">
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="index.html">
+                <a class="offcanvas__stikcy--toolbar__btn" href="{{ route('landing-page') }}">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" width="21.51" height="21.443"
                             viewBox="0 0 22 17">

@@ -10,9 +10,9 @@
                     <p class="deals__content--style2__desc d-md-none">Get up to 80% off for this weak and get
                         offer. <br>
                         Don't miss this chance hit order button.</p>
-                    <div class="deals__banner--countdown d-flex" data-countdown="Sep 30, 2022 00:00:00">
+                    <div class="deals__banner--countdown d-flex" data-countdown="Sep 30, 2023 00:00:00">
                     </div>
-                    <span class="primary__btn btn__style2">Order Now</span>
+                    <span class="primary__btn btn__style2">Pesan Sekarang</span>
                 </div>
             </a>
         </div>

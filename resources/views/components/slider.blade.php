@@ -5,7 +5,26 @@
                 <div class="hero__slider2--inner hero__slider--activation swiper">
                     <div class="hero__slider2--wrapper swiper-wrapper">
                         <div class="swiper-slide ">
-                            <div class="hero__slider2--items hero__slider--bg2 slider1">
+                            <div class="hero__slider2--items hero__slider--bg2 slider1"
+                                style="background-image: url({{ asset('ggm/assets/img/slider/ya2.jpg') }})">
+                                <div class="hero__slider2--items__inner">
+                                    <div class="slider__content2 text-center">
+                                        <p class="slider__content2--desc desc1 text-white mb-15">surem
+                                            Beautiful Your Home</p>
+                                        <h2 class="slider__content2--maintitle text-white h1">Build Your Home
+                                            <br>
+                                            With Furniture
+                                        </h2>
+                                        <a class="slider__content2--btn primary__btn" href="shop.html"
+                                            rel="nofollow">Get Disscount</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="hero__slider2--items hero__slider--bg2 slider2"
+                                style="background-image: url({{ asset('ggm/assets/img/slider/ya.jpg') }})">
+                                >
                                 <div class="hero__slider2--items__inner">
                                     <div class="slider__content2 text-center">
                                         <p class="slider__content2--desc desc1 text-white mb-15">Making
@@ -20,23 +39,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide ">
-                            <div class="hero__slider2--items hero__slider--bg2 slider2">
-                                <div class="hero__slider2--items__inner">
-                                    <div class="slider__content2 text-center">
-                                        <p class="slider__content2--desc desc1 text-white mb-15">Making
-                                            Beautiful Your Home</p>
-                                        <h2 class="slider__content2--maintitle text-white h1">Build Your Home
-                                            <br>
-                                            With Furniture
-                                        </h2>
-                                        <a class="slider__content2--btn primary__btn" href="shop.html"
-                                            rel="nofollow">Get Disscount</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide ">
+                        {{-- <div class="swiper-slide ">
                             <div class="hero__slider2--items hero__slider--bg2 slider3">
                                 <div class="hero__slider2--items__inner">
                                     <div class="slider__content2 text-center">
@@ -51,7 +54,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="swiper__nav--btn swiper-button-next"></div>
                     <div class="swiper__nav--btn swiper-button-prev"></div>
@@ -61,7 +64,7 @@
                 <div class="banner__sidebar--two banner__items banner__sidebar2">
                     <a class="banner__items--thumbnail position__relative" href="shop.html"><img
                             class="banner__items--thumbnail__img banner__sidebar2--img"
-                            src="{{ asset('ggm/assets/img/banner/banner11.webp') }}" alt="banner-img">
+                            src="{{ asset('ggm/assets/img/banner/wall1.jpg') }}" alt="banner-img">
                         <div class="banner__content--style2 banner__sidebar2--content">
                             <h3 class="banner__content--style2__subtitle">Limited Edition</h3>
                             <h2 class="banner__content--style2--title">Official Chair </h2>

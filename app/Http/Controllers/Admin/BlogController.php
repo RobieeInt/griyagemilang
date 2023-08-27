@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Http\Controllers\Controller;
 use App\Models\Blog;
-use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Storage;
 use Illuminate\Support\Str;
+use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
+use Intervention\Image\Facades\Image;
+use Illuminate\Support\Facades\Storage;
 use Yajra\DataTables\Facades\DataTables;
 
 
@@ -62,8 +63,19 @@ class BlogController extends Controller
         // $data['created_by'] = auth()->user()->id;
         // $data['updated_by'] = auth()->user()->id;
         // dd($data);
+        //check public path if no folder create
+        if (!file_exists(public_path('storage/assets/blog'))) {
+            mkdir(public_path('storage/assets/blog'), 0777, true);
+        }
+
         if ($request->hasFile('image')) {
-            $data['image'] = $request->file('image')->store('assets/blog', 'public');
+            // $data['image'] = $request->file('image')->store('assets/blog', 'public');
+            //resize dimension 498x480
+            $image = $request->file('image');
+            $image_resize = Image::make($image->getRealPath());
+            $image_resize->resize(498, 480);
+            $image_resize->save('storage/assets/blog/' . $image->hashName());
+            $data['image'] = 'assets/blog/'. $image->hashName();
         }
         Blog::create($data);
         return redirect()->route('admin.blog')->with('success', 'Data berhasil ditambahkan');

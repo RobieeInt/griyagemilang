@@ -25,7 +25,8 @@
                             <div class="col mb-30">
                                 <div class="product__items ">
                                     <div class="product__items--thumbnail">
-                                        <a class="product__items--link" href="product-details.html">
+                                        <a class="product__items--link" {{-- route to productdetail by slug --}}
+                                            href="{{ route('productDetail', $product->slug) }}">
                                             {{-- <img class="product__items--img product__primary--img"
                                                 src="{{ asset('ggm/assets/img/product/product2.webp') }}"
                                                 alt="product-img"> --}}
@@ -86,7 +87,7 @@
                                                     <span class="visually-hidden">Quick View</span>
                                                 </a>
                                             </li>
-                                            <li class="product__items--action__list style2">
+                                            {{-- <li class="product__items--action__list style2">
                                                 <a class="product__items--action__btn style2" href="wishlist.html">
                                                     <svg class="product__items--action__btn--svg"
                                                         xmlns="http://www.w3.org/2000/svg" width="17.51"
@@ -112,7 +113,7 @@
                                                     </svg>
                                                     <span class="visually-hidden">Compare</span>
                                                 </a>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </div>
                                     <div class="product__items--content text-center">
@@ -161,7 +162,7 @@
                                                     transform="translate(-2.667 -1.366)" fill="currentColor">
                                                 </path>
                                             </svg>
-                                            <span class="add__to--cart__text"> Add to cart</span>
+                                            <span class="add__to--cart__text"> Pilih</span>
                                         </a>
                                     </div>
                                 </div>

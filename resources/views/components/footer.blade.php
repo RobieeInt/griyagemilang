@@ -15,8 +15,8 @@
                         <div class="footer__widget--inner">
                             <a class="footer__logo" href="index.html"><img
                                     src="{{ asset('ggm/assets/img/logo/nav-log2.png') }}" alt="footer-logo"></a>
-                            <p class="footer__widget--desc">Ut enim ad minim veniam, quis <br> nostrud
-                                exercitation ullamco laboris <br> nisi ut aliquip ex ea commodo.</p>
+                            <p class="footer__widget--desc">Jl. Raya Mauk (M.Toha) Km.3 No. 8, Jl. Galeong,
+                                RT.001/RW.008, Margasari, Karawaci, Tangerang City, Banten 15113</p>
                             <div class="footer__social">
                                 <ul class="social__shear d-flex">
                                     <li class="social__shear--list">
@@ -83,15 +83,13 @@
                         </h2>
                         <ul class="footer__widget--menu footer__widget--inner">
                             <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="about.html">About Us</a></li>
+                                    href="{{ route('landing-page') }}">Home</a></li>
                             <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="wishlist.html">Wishlist</a></li>
+                                    href="{{ route('aboutus') }}">About Us</a></li>
                             <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="contact.html">Contact Us</a></li>
+                                    href="{{ route('blog') }}">Blog</a></li>
                             <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="privacy-policy.html">Privacy Policy</a></li>
-                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="faq.html">Frequently</a></li>
+                                    href="{{ route('contactus') }}">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -107,15 +105,13 @@
                         </h2>
                         <ul class="footer__widget--menu footer__widget--inner">
                             <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="my-account.html">My Account</a></li>
+                                    href="{{ route('admin.login') }}">Login</a></li>
                             <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="cart.html">Shopping Cart</a></li>
+                                    href="#">My Account</a></li>
                             <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="login.html">Login</a></li>
+                                    href="#">Privacy Policy</a></li>
                             <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="login.html">Register</a></li>
-                            <li class="footer__widget--menu__list"><a class="footer__widget--menu__text"
-                                    href="checkout.html">Checkout</a></li>
+                                    href="#">Frequently</a></li>
                         </ul>
                     </div>
                 </div>
@@ -155,7 +151,7 @@
         </div>
         <div class="footer__bottom d-flex justify-content-between align-items-center">
             <p class="copyright__content">Copyright © 2022 <a class="copyright__content--link"
-                    href="index.html">Furea</a> . All Rights Reserved.Design By Furea</p>
+                    href="index.html">GGM</a> . All Rights Reserved.</p>
             <div class="footer__payment text-right">
                 <img class="footer__payment--visa__card display-block"
                     src="{{ asset('ggm/assets/img/other/payment-visa-card.webp') }}" alt="visa-card">

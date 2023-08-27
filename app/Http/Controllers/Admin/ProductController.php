@@ -166,7 +166,12 @@ class ProductController extends Controller
          //resize image
         $image_resize = Image::make($image->getRealPath());
         //resize dimension 282x295
-        $image_resize->resize(282, 295);
+        $image_resize->resize(846, 885);
+
+        //check public path if no folder create
+        if (!file_exists(public_path('storage/assets/product'))) {
+            mkdir(public_path('storage/assets/product'), 0777, true);
+        }
         //save image
         $image_resize->save(public_path('storage/assets/product/'.$imageName));
         $imageNameStore = 'assets/product/'.$imageName;

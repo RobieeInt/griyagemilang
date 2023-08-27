@@ -4,7 +4,9 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\LandingController;
 use App\Http\Controllers\Admin\BlogController;
 use App\Http\Controllers\Admin\LoginController;
+use App\Http\Controllers\Admin\ContactController;
 use App\Http\Controllers\Admin\ProductController;
+use App\Http\Controllers\Admin\InstagramController;
 use App\Http\Controllers\Admin\CategoriesController;
 use App\Http\Controllers\Admin\TestimonialController;
 
@@ -27,6 +29,14 @@ use App\Http\Controllers\Admin\TestimonialController;
 
 
 Route::get('/', [LandingController::class, 'index'])->name('landing-page');
+Route::get('/productdetail/{slug}', [LandingController::class, 'productdetail'])->name('productDetail');
+
+Route::get('/blog', [LandingController::class, 'blog'])->name('blog');
+Route::get('/blogdetail/{slug}', [LandingController::class, 'blogdetail'])->name('blogdetail');
+
+Route::get('/quickview/{id}', [LandingController::class, 'quickview'])->name('quickView');
+Route::get('/aboutus', [LandingController::class, 'aboutus'])->name('aboutus');
+Route::get('/contactus', [LandingController::class, 'contactus'])->name('contactus');
 
 
 Route::get('admin/login', [LoginController::class,'index'])->name('admin.login');
@@ -83,6 +93,25 @@ Route::group(['prefix' => 'admin', 'middleware' => 'admin.auth'], function () {
         Route::get('/edit/{id}', [TestimonialController::class, 'edit'])->name('admin.testimonial.edit');
         Route::put('/update/{id}', [TestimonialController::class, 'update'])->name('admin.testimonial.update');
         Route::get('/destroy/{id}', [TestimonialController::class, 'destroy'])->name('admin.testimonial.destroy');
+    });
+    //instagram
+    Route::group(['prefix' => 'instagram'], function () {
+        Route::get('/', [InstagramController::class, 'index'])->name('admin.instagram');
+        Route::get('/create', [InstagramController::class, 'create'])->name('admin.instagram.create');
+        Route::post('/store', [InstagramController::class, 'store'])->name('admin.instagram.store');
+        Route::get('/edit/{id}', [InstagramController::class, 'edit'])->name('admin.instagram.edit');
+        Route::put('/update/{id}', [InstagramController::class, 'update'])->name('admin.instagram.update');
+        Route::get('/destroy/{id}', [InstagramController::class, 'destroy'])->name('admin.instagram.destroy');
+    });
+
+    //contact
+    Route::group(['prefix' => 'contact'], function () {
+        Route::get('/', [ContactController::class, 'index'])->name('admin.contact');
+        Route::get('/create', [ContactController::class, 'create'])->name('admin.contact.create');
+        Route::post('/store', [ContactController::class, 'store'])->name('admin.contact.store');
+        Route::get('/edit/{id}', [ContactController::class, 'edit'])->name('admin.contact.edit');
+        Route::put('/update/{id}', [ContactController::class, 'update'])->name('admin.contact.update');
+        Route::get('/destroy/{id}', [ContactController::class, 'destroy'])->name('admin.contact.destroy');
     });
 
 });

@@ -10,12 +10,12 @@
                         <p class="banner__discount--content__desc">Lorem ipsum dolor sit amet, consecteturiuyr
                             icing elit,sed do eiusmod ut labore et.
                             Lorem ipsum dolor sit amet, consecteturop.</p>
-                        <a class=" primary__btn btn__style2" href="shop.html" rel="nofollow">Discover
+                        <a class=" primary__btn btn__style2" href="#" rel="nofollow">Discover
                             More</a>
                     </div>
                     <div class="banner2__right--sidebar position__relative d-flex">
-                        <div class="banner2__sidebar--items one position__relative">
-                            <a class="banner__items--thumbnail " href="shop.html" rel="nofollow"><img
+                        {{-- <div class="banner2__sidebar--items one position__relative">
+                            <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
                                     class="banner__items--thumbnail__img"
                                     src="{{ asset('ggm/assets/img/banner/banner17.webp') }}" alt="banner-img"></a>
                             <div class="product__badge style2">
@@ -23,15 +23,93 @@
                             </div>
                         </div>
                         <div class="banner2__sidebar--items two position__relative">
-                            <a class="banner__items--thumbnail " href="shop.html" rel="nofollow"><img
+                            <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
                                     class="banner__items--thumbnail__img"
                                     src="{{ asset('ggm/assets/img/banner/banner16.webp') }}" alt="banner-img"></a>
                         </div>
                         <div class="banner2__sidebar--items three position__relative">
-                            <a class="banner__items--thumbnail " href="shop.html" rel="nofollow"><img
+                            <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
                                     class="banner__items--thumbnail__img"
                                     src="{{ asset('ggm/assets/img/banner/banner15.webp') }}" alt="banner-img"></a>
-                        </div>
+                        </div> --}}
+                        @php
+                            $maxItems = 3;
+                            $positionClasses = ['one', 'two', 'three'];
+                        @endphp
+                        @foreach ($productsPopular->take($maxItems) as $key => $product)
+                            {{-- @foreach ($products->where('popular', 1)->take($maxItems) as $key => $product) --}}
+                            @php
+                                $positionClass = 'one';
+                                if ($key === 1) {
+                                    $positionClass = 'two';
+                                } elseif ($key === 2) {
+                                    $positionClass = 'three';
+                                }
+                            @endphp
+
+                            {{-- <div class="banner2__sidebar--items {{ $positionClass }} position__relative">
+                                <a class="banner__items--thumbnail" href="#" rel="nofollow"><img
+                                        class="banner__items--thumbnail__img"
+                                        src="{{ asset('ggm/assets/img/banner/banner' . (18 - $key) . '.webp') }}"
+                                        alt="banner-img"></a>
+                                @if ($product->onSale)
+                                    <div class="product__badge style2">
+                                        <span class="product__badge--items style2 sale">{{ $product->name }}</span>
+                                    </div>
+                                @endif
+                            </div> --}}
+
+                            {{-- @foreach ($product->galleries as $gallery)
+                                <div class="banner2__sidebar--items {{ $positionClass }} position__relative">
+                                    <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
+                                            class="banner__items--thumbnail__img"
+                                            src="{{ asset('storage/' . $gallery->image) }}" alt="banner-img"></a>
+                                    <div class="product__badge style2">
+                                        <span class="product__badge--items style2 sale">
+                                            {{ $product->category->name }}</span>
+                                    </div>
+                                </div>
+                            @endforeach --}}
+
+                            @php
+                                $defaultGallery = null;
+                                $nonDefaultGallery = null;
+                            @endphp
+
+                            @foreach ($product->galleries as $gallery)
+                                @if ($gallery->is_default == 1)
+                                    @php
+                                        $defaultGallery = $gallery;
+                                        break;
+                                    @endphp
+                                @elseif (!$nonDefaultGallery)
+                                    @php
+                                        $nonDefaultGallery = $gallery;
+                                    @endphp
+                                @endif
+                            @endforeach
+                            @if ($defaultGallery)
+                                <div class="banner2__sidebar--items {{ $positionClass }} position__relative">
+                                    <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
+                                            class="banner__items--thumbnail__img"
+                                            src="{{ asset('storage/' . $gallery->image) }}" alt="banner-img"></a>
+                                    <div class="product__badge style2">
+                                        <span class="product__badge--items style2 sale">
+                                            {{ $product->category->name }}</span>
+                                    </div>
+                                </div>
+                            @elseif ($nonDefaultGallery)
+                                <div class="banner2__sidebar--items {{ $positionClass }} position__relative">
+                                    <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
+                                            class="banner__items--thumbnail__img"
+                                            src="{{ asset('storage/' . $gallery->image) }}" alt="banner-img"></a>
+                                    <div class="product__badge style2">
+                                        <span class="product__badge--items style2 sale">
+                                            {{ $product->category->name }}</span>
+                                    </div>
+                                </div>
+                            @endif
+                        @endforeach
                     </div>
                 </div>
             </div>

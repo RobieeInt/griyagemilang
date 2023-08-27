@@ -132,10 +132,10 @@
                 <div class="categories__sidebar--inner">
                     <div class="banner__items position__relative">
                         <a class="banner__items--thumbnail " href="shop.html"><img
-                                class="banner__items--thumbnail__img"
-                                src="{{ asset('ggm/assets/img/banner/banner19.webp') }}" alt="banner-img"></a>
+                                class="banner__items--thumbnail__img" src="{{ asset('storage/' . $contact->image) }}"
+                                alt="banner-img"></a>
                         <div class="bideo__play">
-                            <a class="bideo__play--icon glightbox" href="https://vimeo.com/115041822"
+                            <a class="bideo__play--icon glightbox" href="{{ $contact->linkvideo }}"
                                 data-gallery="video">
                                 <svg id="play" xmlns="http://www.w3.org/2000/svg" width="46.302"
                                     height="46.302" viewBox="0 0 46.302 46.302">
