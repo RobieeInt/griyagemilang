@@ -4,7 +4,7 @@
             <div class="col">
                 <div class="testimonial__section--inner">
                     <div class="section__heading text-center mb-40">
-                        <h2 class="section__heading--maintitle">Apa Kata CLient Kami</h2>
+                        <h2 class="section__heading--maintitle">Apa Kata Klien Kami</h2>
                     </div>
                     <div class=" testimonial__swiper--column3 testimonial__padding swiper">
                         <div class="swiper-wrapper">
