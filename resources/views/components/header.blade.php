@@ -17,7 +17,7 @@
                                     stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
                             </g>
                         </svg>
-                        <a class="header__info--text" href="tel:+001-234-567-890">+001-234-567-890 </a>
+                        <a class="header__info--text" href="{{ $contact->telp }}">{{ $contact->telp }} </a>
                     </li>
                     <li class="header__info--list">
                         <svg class="header__info--icon" xmlns="http://www.w3.org/2000/svg" width="25.712"
@@ -53,11 +53,11 @@
                                 </g>
                             </g>
                         </svg>
-                        <a class="header__info--text" href="mailto:info@example.com">info@example.com</a>
+                        <a class="header__info--text" href="mailto:{{ $contact->email }}">{{ $contact->email }}</a>
                     </li>
                 </ul>
                 <div class="header__shipping">
-                    <p class="header__shipping--text">Get Up To 80% off In your first Offer!</p>
+                    <p class="header__shipping--text">{{ $contact->message }}</p>
                 </div>
 
             </div>

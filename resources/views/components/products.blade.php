@@ -51,11 +51,13 @@
                                             @if ($defaultGallery)
                                                 <img class="product__items--img product__primary--img"
                                                     {{-- src="{{ asset('ggm/assets/img/product/product2.webp') }}" --}}
-                                                    src="{{ asset('storage/' . $gallery->image) }}" alt="product-img">
+                                                    src="{{ asset('public/storage/' . $gallery->image) }}"
+                                                    alt="product-img">
                                             @elseif ($nonDefaultGallery)
                                                 <img class="product__items--img product__primary--img"
                                                     {{-- src="{{ asset('ggm/assets/img/product/product2.webp') }}" --}}
-                                                    src="{{ asset('storage/' . $gallery->image) }}" alt="product-img">
+                                                    src="{{ asset('public/storage/' . $gallery->image) }}"
+                                                    alt="product-img">
                                             @endif
 
                                         </a>

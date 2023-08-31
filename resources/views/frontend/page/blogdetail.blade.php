@@ -20,7 +20,7 @@
                             </div>
                             <div class="blog__thumbnail mb-30">
                                 <img class="blog__thumbnail--img border-radius-10"
-                                    src="{{ asset('storage/' . $blog->image) }}" alt="blog-img">
+                                    src="{{ asset('public/storage/' . $blog->image) }}" alt="blog-img">
                             </div>
                             <div class="blog__details--content">
                                 <h3 class="blog__details--content__subtitle mb-25">{{ $blog->description }}</h3>
@@ -488,7 +488,7 @@
                                         <div class="articl__post--items__thumbnail position__relative">
                                             <a class="articl__post--items__link display-block" href="blog-details.html">
                                                 <img class="articl__post--items__img display-block"
-                                                    src="{{ asset('storage/' . $blog->image) }}" alt="product-img">
+                                                    src="{{ asset('public/storage/' . $blog->image) }}" alt="product-img">
                                             </a>
                                         </div>
                                         <div class="articl__post--items__content">

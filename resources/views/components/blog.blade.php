@@ -12,7 +12,7 @@
                                 <a class="blog__thumbnail--link display-block"
                                     href="{{ route('blogdetail', $blog->slug) }}"><img
                                         class="blog__thumbnail--img display-block"
-                                        src="{{ asset('storage/' . $blog->image) }}" alt="blog-img"></a>
+                                        src="{{ asset('public/storage/' . $blog->image) }}" alt="blog-img"></a>
                             </div>
                             <div class="blog__content">
                                 <ul class="blog__content--meta d-flex">

@@ -13,7 +13,7 @@
                                       <a class="product__items--link"
                                           href="{{ route('productDetail', $product->slug) }}">
                                           <img class="product__items--img product__primary--img"
-                                              src="{{ asset('storage/' . $product->galleries[0]->image) }}"
+                                              src="{{ asset('public/storage/' . $product->galleries[0]->image) }}"
                                               alt="product-img" />
                                           {{-- <img class="product__items--img product__secondary--img"
                                               src="{{ asset('ggm/assets/img/product/product2.webp') }}"

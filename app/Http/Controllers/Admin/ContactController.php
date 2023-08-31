@@ -102,9 +102,7 @@ class ContactController extends Controller
             $data['image'] = 'assets/contact/'. $image->hashName();
         }
 
-        // dd($data);
-        $data = Contact::findOrFail($id);
-        $data->update($data);
+        Contact::findOrFail($id)->update($data);
         return redirect()->route('admin.contact')->with('success', 'Data berhasil diupdate');
     }
 

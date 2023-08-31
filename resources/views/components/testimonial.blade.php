@@ -14,7 +14,8 @@
                                         class="testimonial__items--style2 position__relative border-radius-5 d-flex align-items-center">
                                         <div class="testimonial__thumbnail--style2">
                                             <img class="testimonial__items--thumbnail__img display-block"
-                                                src="{{ asset('storage/' . $testi->image) }}" alt="testimonial-img">
+                                                src="{{ asset('public/storage/' . $testi->image) }}"
+                                                alt="testimonial-img">
                                         </div>
                                         <div class="testimonial__content--style2">
                                             <h3 class="testimonial__items--author__title h4">{{ $testi->name }}</h3>
