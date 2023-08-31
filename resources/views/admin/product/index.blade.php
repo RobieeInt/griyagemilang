@@ -86,7 +86,7 @@
                         name: 'image',
                         // render: function(data, type, full, meta) {
                         //     // return "<img src=\"" + data + "\" height=\"50\"/>";
-                        //     return "<img src=\"/storage/" + data + "\" height=\"50\"/>";
+                        //     return "<img src=\"/public/storage/" + data + "\" height=\"50\"/>";
                         // },
                         orderable: false
                     },
