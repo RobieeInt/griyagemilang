@@ -4,14 +4,15 @@
             <div class="col">
                 <div class="banner__section--inner d-flex align-items-center">
                     <div class="banner__discount--content">
-                        <h3 class="banner__discount--content__subtitle">Get Discount Up to 80%</h3>
+                        <h3 class="banner__discount--content__subtitle">Dapatkan Penawaran Menarik</h3>
                         <h2 class="banner__discount--content__title">Top Trending
-                            Furniture Items</h2>
+                            Furniture</h2>
                         <p class="banner__discount--content__desc">Lorem ipsum dolor sit amet, consecteturiuyr
                             icing elit,sed do eiusmod ut labore et.
                             Lorem ipsum dolor sit amet, consecteturop.</p>
-                        <a class=" primary__btn btn__style2" href="#" rel="nofollow">Discover
-                            More</a>
+                        <a class=" primary__btn btn__style2" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Penawaran%20"
+                            rel="nofollow">Dapatkan Penawaran</a>
                     </div>
                     <div class="banner2__right--sidebar position__relative d-flex">
                         {{-- <div class="banner2__sidebar--items one position__relative">
