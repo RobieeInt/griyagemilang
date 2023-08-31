@@ -41,7 +41,8 @@ class LandingController extends Controller
         //get random products
         $randomProducts = Product::with(['galleries', 'category'])->where('status', '1')->inRandomOrder()->take(6)->get();
         // dd($product);
-        return view('frontend.page.productdetail', compact('product', 'randomProducts'));
+        $contact = Contact::orderBy('id', 'desc')->first();
+        return view('frontend.page.productdetail', compact('product', 'randomProducts','contact'));
     }
 
     //aboutus
@@ -63,13 +64,15 @@ class LandingController extends Controller
         //get random blogs
         $randomBlogs = Blog::inRandomOrder()->take(3)->get();
         // dd($blog);
-        return view('frontend.page.blogdetail', compact('blog', 'randomBlogs'));
+        $contact = Contact::orderBy('id', 'desc')->first();
+        return view('frontend.page.blogdetail', compact('blog', 'randomBlogs','contact'));
     }
 
     //blog
     public function blog() {
         $blogs = Blog::orderBy('created_at','desc')->paginate(12);
         // dd($blogs);
-        return view('frontend.page.blog', compact('blogs'));
+        $contact = Contact::orderBy('id', 'desc')->first();
+        return view('frontend.page.blog', compact('blogs','contact'));
     }
 }

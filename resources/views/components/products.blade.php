@@ -120,11 +120,13 @@
                                     </div>
                                     <div class="product__items--content text-center">
 
-                                        <a class="product__items--content__tag" href="product-details.html">
+                                        <a class="product__items--content__tag"
+                                            href="{{ route('productDetail', $product->slug) }}">
                                             {{ $product->category->name }}
                                         </a>
                                         <h3 class="product__items--content__title h4"><a
-                                                href="product-details.html">{{ $product->name }}</a></h3>
+                                                href="{{ route('productDetail', $product->slug) }}">{{ $product->name }}</a>
+                                        </h3>
                                         <div class="product__items--price">
                                             <span class="current__price">
                                                 {{-- format number price --}}
@@ -155,7 +157,7 @@
                                             @endfor
                                         </ul>
                                         <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                            href="cart.html">
+                                            href="{{ route('productDetail', $product->slug) }}">
                                             <svg class="product__items--action__cart--btn__icon"
                                                 xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                                 viewBox="0 0 18.897 21.565">
@@ -179,7 +181,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product8.webp') }}"
                                             alt="product-img">
@@ -237,9 +239,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Plastic Chair Wooden</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Plastic Chair Wooden</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$190.00</span>
                                         <span class="old__price">$200.00</span>
@@ -307,7 +309,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -324,7 +326,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product10.webp') }}"
                                             alt="product-img">
@@ -385,9 +387,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Folding Tables Chairs</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Folding Tables Chairs</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$175.00</span>
                                         <span class="old__price">$190.00</span>
@@ -455,7 +457,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -472,7 +474,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product12.webp') }}"
                                             alt="product-img">
@@ -530,9 +532,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Modern Fabric Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Modern Fabric Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$165.00</span>
                                         <span class="old__price">$210.00</span>
@@ -600,7 +602,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -617,7 +619,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product13.webp') }}"
                                             alt="product-img">
@@ -678,9 +680,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Globe Electric Lamp</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Globe Electric Lamp</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$145.00</span>
                                         <span class="old__price">$185.00</span>
@@ -748,7 +750,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -765,7 +767,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product1.webp') }}"
                                             alt="product-img">
@@ -823,9 +825,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Fashion Plastic Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Fashion Plastic Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$150.00</span>
                                         <span class="old__price">$200.00</span>
@@ -893,7 +895,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -910,7 +912,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product2.webp') }}"
                                             alt="product-img">
@@ -971,9 +973,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Fashion Plastic Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Fashion Plastic Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$150.00</span>
                                         <span class="old__price">$200.00</span>
@@ -1042,7 +1044,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -1059,7 +1061,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product4.webp') }}"
                                             alt="product-img">
@@ -1117,9 +1119,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Modern Swivel Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Modern Swivel Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$160.00</span>
                                         <span class="old__price">$210.00</span>
@@ -1187,7 +1189,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -1204,7 +1206,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product6.webp') }}"
                                             alt="product-img">
@@ -1265,9 +1267,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Design Living Sofa</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Design Living Sofa</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$155.00</span>
                                         <span class="old__price">$205.00</span>
@@ -1335,7 +1337,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -1358,7 +1360,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product12.webp') }}"
                                             alt="product-img">
@@ -1416,9 +1418,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Modern Fabric Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Modern Fabric Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$165.00</span>
                                         <span class="old__price">$210.00</span>
@@ -1486,7 +1488,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -1503,7 +1505,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product13.webp') }}"
                                             alt="product-img">
@@ -1564,9 +1566,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Globe Electric Lamp</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Globe Electric Lamp</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$145.00</span>
                                         <span class="old__price">$185.00</span>
@@ -1634,7 +1636,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -1651,7 +1653,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product2.webp') }}"
                                             alt="product-img">
@@ -1712,9 +1714,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Fashion Plastic Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Fashion Plastic Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$150.00</span>
                                         <span class="old__price">$200.00</span>
@@ -1783,7 +1785,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -1800,7 +1802,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product4.webp') }}"
                                             alt="product-img">
@@ -1858,9 +1860,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Modern Swivel Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Modern Swivel Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$160.00</span>
                                         <span class="old__price">$210.00</span>
@@ -1928,7 +1930,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -1945,7 +1947,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product6.webp') }}"
                                             alt="product-img">
@@ -2006,9 +2008,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Design Living Sofa</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Design Living Sofa</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$155.00</span>
                                         <span class="old__price">$205.00</span>
@@ -2076,7 +2078,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -2093,7 +2095,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product8.webp') }}"
                                             alt="product-img">
@@ -2151,9 +2153,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Plastic Chair Wooden</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Plastic Chair Wooden</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$190.00</span>
                                         <span class="old__price">$200.00</span>
@@ -2221,7 +2223,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -2238,7 +2240,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product10.webp') }}"
                                             alt="product-img">
@@ -2299,9 +2301,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Folding Tables Chairs</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Folding Tables Chairs</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$175.00</span>
                                         <span class="old__price">$190.00</span>
@@ -2369,7 +2371,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -2386,7 +2388,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product1.webp') }}"
                                             alt="product-img">
@@ -2444,9 +2446,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Fashion Plastic Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Fashion Plastic Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$150.00</span>
                                         <span class="old__price">$200.00</span>
@@ -2514,7 +2516,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -2537,7 +2539,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product6.webp') }}"
                                             alt="product-img">
@@ -2598,9 +2600,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Design Living Sofa</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Design Living Sofa</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$155.00</span>
                                         <span class="old__price">$205.00</span>
@@ -2668,7 +2670,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -2685,7 +2687,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product8.webp') }}"
                                             alt="product-img">
@@ -2743,9 +2745,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Plastic Chair Wooden</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Plastic Chair Wooden</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$190.00</span>
                                         <span class="old__price">$200.00</span>
@@ -2813,7 +2815,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -2830,7 +2832,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product10.webp') }}"
                                             alt="product-img">
@@ -2891,9 +2893,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Folding Tables Chairs</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Folding Tables Chairs</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$175.00</span>
                                         <span class="old__price">$190.00</span>
@@ -2961,7 +2963,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -2978,7 +2980,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product2.webp') }}"
                                             alt="product-img">
@@ -3039,9 +3041,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Fashion Plastic Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Fashion Plastic Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$150.00</span>
                                         <span class="old__price">$200.00</span>
@@ -3110,7 +3112,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -3127,7 +3129,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product4.webp') }}"
                                             alt="product-img">
@@ -3185,9 +3187,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Modern Swivel Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Modern Swivel Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$160.00</span>
                                         <span class="old__price">$210.00</span>
@@ -3255,7 +3257,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -3272,7 +3274,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product12.webp') }}"
                                             alt="product-img">
@@ -3330,9 +3332,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Modern Fabric Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Modern Fabric Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$165.00</span>
                                         <span class="old__price">$210.00</span>
@@ -3400,7 +3402,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -3417,7 +3419,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product13.webp') }}"
                                             alt="product-img">
@@ -3478,9 +3480,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Globe Electric Lamp</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Globe Electric Lamp</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$145.00</span>
                                         <span class="old__price">$185.00</span>
@@ -3548,7 +3550,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -3565,7 +3567,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product1.webp') }}"
                                             alt="product-img">
@@ -3623,9 +3625,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Fashion Plastic Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Fashion Plastic Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$150.00</span>
                                         <span class="old__price">$200.00</span>
@@ -3693,7 +3695,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -3716,7 +3718,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product13.webp') }}"
                                             alt="product-img">
@@ -3777,9 +3779,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Globe Electric Lamp</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Globe Electric Lamp</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$145.00</span>
                                         <span class="old__price">$185.00</span>
@@ -3847,7 +3849,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -3864,7 +3866,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product1.webp') }}"
                                             alt="product-img">
@@ -3922,9 +3924,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Fashion Plastic Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Fashion Plastic Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$150.00</span>
                                         <span class="old__price">$200.00</span>
@@ -3992,7 +3994,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -4009,7 +4011,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product2.webp') }}"
                                             alt="product-img">
@@ -4070,9 +4072,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Fashion Plastic Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Fashion Plastic Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$150.00</span>
                                         <span class="old__price">$200.00</span>
@@ -4141,7 +4143,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -4158,7 +4160,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product4.webp') }}"
                                             alt="product-img">
@@ -4216,9 +4218,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Modern Swivel Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Modern Swivel Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$160.00</span>
                                         <span class="old__price">$210.00</span>
@@ -4286,7 +4288,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -4303,7 +4305,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product6.webp') }}"
                                             alt="product-img">
@@ -4364,9 +4366,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Design Living Sofa</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Design Living Sofa</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$155.00</span>
                                         <span class="old__price">$205.00</span>
@@ -4434,7 +4436,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -4451,7 +4453,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product8.webp') }}"
                                             alt="product-img">
@@ -4509,9 +4511,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Plastic Chair Wooden</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Plastic Chair Wooden</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$190.00</span>
                                         <span class="old__price">$200.00</span>
@@ -4579,7 +4581,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -4596,7 +4598,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product10.webp') }}"
                                             alt="product-img">
@@ -4657,9 +4659,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Folding Tables Chairs</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Folding Tables Chairs</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$175.00</span>
                                         <span class="old__price">$190.00</span>
@@ -4727,7 +4729,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
@@ -4744,7 +4746,7 @@
                         <div class="col mb-30">
                             <div class="product__items ">
                                 <div class="product__items--thumbnail">
-                                    <a class="product__items--link" href="product-details.html">
+                                    <a class="product__items--link" href="{{ route('productDetail', $product->slug) }}">
                                         <img class="product__items--img product__primary--img"
                                             src="{{ asset('ggm/assets/img/product/product12.webp') }}"
                                             alt="product-img">
@@ -4802,9 +4804,9 @@
                                 </div>
                                 <div class="product__items--content text-center">
 
-                                    <a class="product__items--content__tag" href="product-details.html">Chair</a>
+                                    <a class="product__items--content__tag" href="{{ route('productDetail', $product->slug) }}">Chair</a>
                                     <h3 class="product__items--content__title h4"><a
-                                            href="product-details.html">Modern Fabric Chair</a></h3>
+                                            href="{{ route('productDetail', $product->slug) }}">Modern Fabric Chair</a></h3>
                                     <div class="product__items--price">
                                         <span class="current__price">$165.00</span>
                                         <span class="old__price">$210.00</span>
@@ -4872,7 +4874,7 @@
                                         </li>
                                     </ul>
                                     <a class="product__items--action__cart--btn primary__btn btn__style2"
-                                        href="cart.html">
+                                        href="{{ route('productDetail', $product->slug) }}">
                                         <svg class="product__items--action__cart--btn__icon"
                                             xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"
                                             viewBox="0 0 18.897 21.565">
