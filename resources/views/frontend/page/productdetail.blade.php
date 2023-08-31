@@ -478,7 +478,7 @@
                                     </a> --}}
                                     {{-- <button class="variant__buy--now__btn primary__btn" type="submit">Pesan</button> --}}
                                     {{-- button direct to whatsapp with $product->name --}}
-                                    <a href="https://api.whatsapp.com/send?phone=6281234567890&text=Halo%20saya%20ingin%20pesan%20{{ $product->name }}"
+                                    <a href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20saya%20ingin%20pesan%20{{ $product->name }}"
                                         class="primary__btn" target="_blank">Pesan</a>
                                 </div>
 
