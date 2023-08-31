@@ -2,14 +2,14 @@
     <div class="container">
         <div class="categories__inner d-flex align-items-center">
             <div class="categories__content">
-                <p class="categories__content--desc desc1">Get Discount Up to 80%</p>
-                <h2 class="categories__content--title">Choice Your Best
-                    Furniture Items</h2>
-                <p class="categories__content--desc">Get up to 80% off for this weak and get offer.
-                    Don't miss this chance hit order button.</p>
+                <p class="categories__content--desc desc1">Dapatkan Penawaran Menarik</p>
+                <h2 class="categories__content--title">Ciptakan Kemewahan Dapur Impian anda</h2>
+                <p class="categories__content--desc">Dapatkan Penawaran Terbaik Dari kami. <br> Nanya-nanya Dulu Gratis
+                    Kok</p>
                 <ul class="categories__product d-flex">
                     <li class="categories__product--list">
-                        <a class="categories__product--icons" href="shop.html"><svg
+                        <a class="categories__product--icons" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20"><svg
                                 class="categories__product--icons__svg" xmlns="http://www.w3.org/2000/svg"
                                 width="28.626" height="26.234" viewBox="0 0 28.626 26.234">
                                 <path id="armchair"
@@ -20,7 +20,8 @@
                         </a>
                     </li>
                     <li class="categories__product--list">
-                        <a class="categories__product--icons" href="shop.html">
+                        <a class="categories__product--icons" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20">
                             <svg class="categories__product--icons__svg" xmlns="http://www.w3.org/2000/svg"
                                 width="22.8" height="34.994" viewBox="0 0 22.8 34.994">
                                 <path
@@ -31,7 +32,8 @@
                         </a>
                     </li>
                     <li class="categories__product--list">
-                        <a class="categories__product--icons" href="shop.html">
+                        <a class="categories__product--icons" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20">
                             <svg class="categories__product--icons__svg" xmlns="http://www.w3.org/2000/svg"
                                 width="29.069" height="19.531" viewBox="0 0 29.069 19.531">
                                 <g id="bed" transform="translate(0 -84)">
@@ -46,7 +48,8 @@
                         </a>
                     </li>
                     <li class="categories__product--list">
-                        <a class="categories__product--icons" href="shop.html">
+                        <a class="categories__product--icons" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20">
                             <svg class="categories__product--icons__svg" xmlns="http://www.w3.org/2000/svg"
                                 width="21.44" height="30.211" viewBox="0 0 21.44 30.211">
                                 <path
@@ -57,7 +60,8 @@
                         </a>
                     </li>
                     <li class="categories__product--list">
-                        <a class="categories__product--icons" href="shop.html">
+                        <a class="categories__product--icons" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20">
                             <svg class="categories__product--icons__svg" xmlns="http://www.w3.org/2000/svg"
                                 width="40.031" height="21.953" viewBox="0 0 40.031 21.953">
                                 <path
@@ -68,7 +72,8 @@
                         </a>
                     </li>
                     <li class="categories__product--list">
-                        <a class="categories__product--icons" href="shop.html">
+                        <a class="categories__product--icons" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20">
                             <svg class="categories__product--icons__svg" xmlns="http://www.w3.org/2000/svg"
                                 width="34.974" height="15.625" viewBox="0 0 34.974 15.625">
                                 <path
@@ -79,7 +84,8 @@
                         </a>
                     </li>
                     <li class="categories__product--list">
-                        <a class="categories__product--icons" href="shop.html">
+                        <a class="categories__product--icons" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20">
                             <svg class="categories__product--icons__svg" xmlns="http://www.w3.org/2000/svg"
                                 width="20.041" height="29.584" viewBox="0 0 20.041 29.584">
                                 <g id="wardrobe" transform="translate(-88 -8)">
@@ -98,7 +104,8 @@
                         </a>
                     </li>
                     <li class="categories__product--list">
-                        <a class="categories__product--icons" href="shop.html">
+                        <a class="categories__product--icons" target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20">
                             <svg class="categories__product--icons__svg" xmlns="http://www.w3.org/2000/svg"
                                 width="21.158" height="35.443" viewBox="0 0 21.158 35.443">
                                 <g id="ceiling-lamp" transform="translate(-103.178)">
@@ -125,13 +132,15 @@
                         </a>
                     </li>
                 </ul>
-                <a class="categories__content--btn primary__btn btn__style2" href="shop.html">See All
-                    Categories</a>
+                <a class="categories__content--btn primary__btn btn__style2" target="_blank"
+                    href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20">Hubungi
+                    Kami</a>
             </div>
             <div class="categories__sidebar">
                 <div class="categories__sidebar--inner">
                     <div class="banner__items position__relative">
-                        <a class="banner__items--thumbnail " href="shop.html"><img
+                        <a class="banner__items--thumbnail " target="_blank"
+                            href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Tanya%20"><img
                                 class="banner__items--thumbnail__img"
                                 src="{{ asset('public/storage/' . $contact->image) }}" alt="banner-img"></a>
                         <div class="bideo__play">
