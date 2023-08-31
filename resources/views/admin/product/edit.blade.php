@@ -105,14 +105,14 @@
                         @foreach ($data->galleries as $galleries)
                             {{-- {{ dd($galleries) }} --}}
                             @if ($galleries->is_default === 0)
-                                <img src="{{ asset('/storage/' . $galleries['image']) }}" alt
+                                <img src="{{ asset('/public/storage/' . $galleries['image']) }}" alt
                                     style="width: 100px; height: 100px">
                                 <a href="{{ route('admin.galleries.delete', $galleries->id) }}"
                                     class="btn btn-danger btn-sm">Delete</a>
                                 <a href="{{ route('admin.galleries.set_default', $galleries->id) }}"
                                     class="btn btn-primary btn-sm">Set as Default</a>
                             @else
-                                <img src="{{ asset('/storage/' . $galleries['image']) }}" alt
+                                <img src="{{ asset('/public/storage/' . $galleries['image']) }}" alt
                                     style="width: 100px; height: 100px">
                                 <a href="{{ route('admin.galleries.delete', $galleries->id) }}"
                                     class="btn btn-danger btn-sm">Delete</a>
