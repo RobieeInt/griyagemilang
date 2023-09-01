@@ -355,16 +355,16 @@
                 <ul class="offcanvas__menu_ul">
                     <li class="offcanvas__menu_li">
                         <a class="offcanvas__menu_item" href="{{ route('landing-page') }}">Home</a>
-                        <ul class="offcanvas__sub_menu">
+                        {{-- <ul class="offcanvas__sub_menu">
                             <li class="offcanvas__sub_menu_li"><a href="{{ route('landing-page') }}"
                                     class="offcanvas__sub_menu_item">Home One</a></li>
                             <li class="offcanvas__sub_menu_li"><a href="index-2.html"
                                     class="offcanvas__sub_menu_item">Home Two</a></li>
                             <li class="offcanvas__sub_menu_li"><a href="index-3.html"
                                     class="offcanvas__sub_menu_item">Home Three</a></li>
-                        </ul>
+                        </ul> --}}
                     </li>
-                    <li class="offcanvas__menu_li">
+                    {{-- <li class="offcanvas__menu_li">
                         <a class="offcanvas__menu_item" href="#">Shop</a>
                         <ul class="offcanvas__sub_menu">
                             <li class="offcanvas__sub_menu_li">
@@ -428,10 +428,10 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li> --}}
                     <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="#">Blog</a>
-                        <ul class="offcanvas__sub_menu">
+                        <a class="offcanvas__menu_item" href="{{ route('blog') }}">Blog</a>
+                        {{-- <ul class="offcanvas__sub_menu">
                             <li class="offcanvas__sub_menu_li"><a href="blog.html"
                                     class="offcanvas__sub_menu_item">Blog Grid</a></li>
                             <li class="offcanvas__sub_menu_li"><a href="blog-details.html"
@@ -440,10 +440,10 @@
                                     class="offcanvas__sub_menu_item">Blog Left Sidebar</a></li>
                             <li class="offcanvas__sub_menu_li"><a href="blog-right-sidebar.html"
                                     class="offcanvas__sub_menu_item">Blog Right Sidebar</a></li>
-                        </ul>
+                        </ul> --}}
                     </li>
-                    <li class="offcanvas__menu_li">
-                        <a class="offcanvas__menu_item" href="#">Pages</a>
+                    {{-- <li class="offcanvas__menu_li">
+                        <a class="offcanvas__menu_item" href="{{ route('aboutus') }}">About Us</a>
                         <ul class="offcanvas__sub_menu">
                             <li class="offcanvas__sub_menu_li"><a href="about.html"
                                     class="offcanvas__sub_menu_item">About Us</a></li>
@@ -460,14 +460,17 @@
                             <li class="offcanvas__sub_menu_li"><a href="404.html"
                                     class="offcanvas__sub_menu_item">Error Page</a></li>
                         </ul>
+                    </li> --}}
+                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
+                            href="{{ route('aboutus') }}">About Us</a>
                     </li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="about.html">About</a>
-                    </li>
-                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item" href="contact.html">Contact</a>
+                    <li class="offcanvas__menu_li"><a class="offcanvas__menu_item"
+                            href="{{ route('contactus') }}">Contact</a>
                     </li>
                 </ul>
                 <div class="offcanvas__account--items">
-                    <a class="offcanvas__account--items__btn d-flex align-items-center" href="login.html">
+                    <a class="offcanvas__account--items__btn d-flex align-items-center"
+                        href="{{ route('admin.login') }}">
                         <span class="offcanvas__account--items__icon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20.51" height="19.443"
                                 viewBox="0 0 512 512">
@@ -480,10 +483,10 @@
                                     fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" />
                             </svg>
                         </span>
-                        <span class="offcanvas__account--items__label">Login / Register</span>
+                        <span class="offcanvas__account--items__label">Login</span>
                     </a>
                 </div>
-                <div class="language__currency">
+                {{-- <div class="language__currency">
                     <ul class="d-flex align-items-center">
                         <li class="language__currency--list">
                             <a class="offcanvas__language--switcher" href="#">
@@ -531,7 +534,7 @@
                             </div>
                         </li>
                     </ul>
-                </div>
+                </div> --}}
             </nav>
         </div>
     </div>
@@ -554,7 +557,7 @@
                 </a>
             </li>
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="shop.html">
+                <a class="offcanvas__stikcy--toolbar__btn" href="{{ route('blog') }}">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg fill="currentColor" xmlns="http://www.w3.org/2000/svg" width="18.51" height="17.443"
                             viewBox="0 0 448 512">
@@ -563,7 +566,7 @@
                             </path>
                         </svg>
                     </span>
-                    <span class="offcanvas__stikcy--toolbar__label">Shop</span>
+                    <span class="offcanvas__stikcy--toolbar__label">Blog</span>
                 </a>
             </li>
             <li class="offcanvas__stikcy--toolbar__list ">
@@ -581,21 +584,21 @@
                 </a>
             </li>
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn minicart__open--btn" href="javascript:void(0)">
+                <a class="offcanvas__stikcy--toolbar__btn minicart__open--btn" href="{{ route('contactus') }}">
                     <span class="offcanvas__stikcy--toolbar__icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="18.51" height="15.443"
-                            viewBox="0 0 18.51 15.443">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="white">
                             <path
-                                d="M79.963,138.379l-13.358,0-.56-1.927a.871.871,0,0,0-.6-.592l-1.961-.529a.91.91,0,0,0-.226-.03.864.864,0,0,0-.226,1.7l1.491.4,3.026,10.919a1.277,1.277,0,1,0,1.844,1.144.358.358,0,0,0,0-.049h6.163c0,.017,0,.034,0,.049a1.277,1.277,0,1,0,1.434-1.267c-1.531-.247-7.783-.55-7.783-.55l-.205-.8h7.8a.9.9,0,0,0,.863-.651l1.688-5.943h.62a.936.936,0,1,0,0-1.872Zm-9.934,6.474H68.568c-.04,0-.1.008-.125-.085-.034-.118-.082-.283-.082-.283l-1.146-4.037a.061.061,0,0,1,.011-.057.064.064,0,0,1,.053-.025h1.777a.064.064,0,0,1,.063.051l.969,4.34,0,.013a.058.058,0,0,1,0,.019A.063.063,0,0,1,70.03,144.853Zm3.731-4.41-.789,4.359a.066.066,0,0,1-.063.051h-1.1a.064.064,0,0,1-.063-.051l-.789-4.357a.064.064,0,0,1,.013-.055.07.07,0,0,1,.051-.025H73.7a.06.06,0,0,1,.051.025A.064.064,0,0,1,73.76,140.443Zm3.737,0L76.26,144.8a.068.068,0,0,1-.063.049H74.684a.063.063,0,0,1-.051-.025.064.064,0,0,1-.013-.055l.973-4.357a.066.066,0,0,1,.063-.051h1.777a.071.071,0,0,1,.053.025A.076.076,0,0,1,77.5,140.448Z"
-                                transform="translate(-62.393 -135.3)" fill="currentColor" />
+                                d="M2 4a2 2 0 012-2h16a2 2 0 012 2v16a2 2 0 01-2 2H4a2 2 0 01-2-2zm2-1h16a1 1 0 011 1v2.414l-8.293 8.293a1 1 0 01-1.414 0L3 9.414V5a1 1 0 011-1zm0 14v-5.586l5.293 5.293a1 1 0 001.414 0L21 11.586V17a1 1 0 01-1 1H4a1 1 0 01-1-1zm9-6a1 1 0 110 2 1 1 0 010-2z" />
                         </svg>
+
                     </span>
-                    <span class="offcanvas__stikcy--toolbar__label">Cart</span>
-                    <span class="items__count">3</span>
+                    <span class="offcanvas__stikcy--toolbar__label">Contact</span>
+                    {{-- <span class="items__count">3</span> --}}
                 </a>
             </li>
             <li class="offcanvas__stikcy--toolbar__list">
-                <a class="offcanvas__stikcy--toolbar__btn" href="wishlist.html">
+                <a class="offcanvas__stikcy--toolbar__btn" href="{{ route('aboutus') }}">
                     <span class="offcanvas__stikcy--toolbar__icon">
                         <svg xmlns="http://www.w3.org/2000/svg" width="18.541" height="15.557"
                             viewBox="0 0 18.541 15.557">
@@ -604,8 +607,8 @@
                                 transform="translate(-62.498 -132.915)" fill="currentColor" />
                         </svg>
                     </span>
-                    <span class="offcanvas__stikcy--toolbar__label">Wishlist</span>
-                    <span class="items__count wishlist__count">3</span>
+                    <span class="offcanvas__stikcy--toolbar__label">About Us</span>
+                    {{-- <span class="items__count wishlist__count">3</span> --}}
                 </a>
             </li>
         </ul>
