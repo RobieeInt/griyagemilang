@@ -64,7 +64,7 @@
                                 <div class="banner2__sidebar--items {{ $positionClass }} position__relative">
                                     <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
                                             class="banner__items--thumbnail__img"
-                                            src="{{ asset('public/storage/' . $gallery->image) }}" alt="banner-img"></a>
+                                            src="{{ asset('storage/' . $gallery->image) }}" alt="banner-img"></a>
                                     <div class="product__badge style2">
                                         <span class="product__badge--items style2 sale">
                                             {{ $product->category->name }}</span>
@@ -93,7 +93,7 @@
                                 <div class="banner2__sidebar--items {{ $positionClass }} position__relative">
                                     <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
                                             class="banner__items--thumbnail__img"
-                                            src="{{ asset('public/storage/' . $gallery->image) }}" alt="banner-img"></a>
+                                            src="{{ asset('storage/' . $gallery->image) }}" alt="banner-img"></a>
                                     <div class="product__badge style2">
                                         <span class="product__badge--items style2 sale">
                                             {{ $product->category->name }}</span>
@@ -103,7 +103,7 @@
                                 <div class="banner2__sidebar--items {{ $positionClass }} position__relative">
                                     <a class="banner__items--thumbnail " href="#" rel="nofollow"><img
                                             class="banner__items--thumbnail__img"
-                                            src="{{ asset('public/storage/' . $gallery->image) }}" alt="banner-img"></a>
+                                            src="{{ asset('storage/' . $gallery->image) }}" alt="banner-img"></a>
                                     <div class="product__badge style2">
                                         <span class="product__badge--items style2 sale">
                                             {{ $product->category->name }}</span>

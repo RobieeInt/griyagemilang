@@ -68,13 +68,13 @@
                                             <div class="product__media--preview__items">
                                                 <a class="product__media--preview__items--link glightbox"
                                                     data-gallery="product-media-preview"
-                                                    href="{{ asset('public/storage/' . $gallery->image) }}"><img
+                                                    href="{{ asset('storage/' . $gallery->image) }}"><img
                                                         class="product__media--preview__items--img"
-                                                        src="{{ asset('public/storage/' . $gallery->image) }}"
+                                                        src="{{ asset('storage/' . $gallery->image) }}"
                                                         alt="product-media-img"></a>
                                                 <div class="product__media--view__icon">
                                                     {{-- <a class="product__media--view__icon--link glightbox"
-                                                        href="{{ asset('public/storage/' . $gallery->image) }}"
+                                                        href="{{ asset('storage/' . $gallery->image) }}"
                                                         data-gallery="product-media-preview">
                                                         <svg class="product__media--view__icon--svg"
                                                             xmlns="http://www.w3.org/2000/svg" width="22.51"
@@ -276,7 +276,7 @@
                                         <div class="swiper-slide">
                                             <div class="product__media--nav__items">
                                                 <img class="product__media--nav__items--img"
-                                                    src="{{ asset('public/storage/' . $gallery->image) }}"
+                                                    src="{{ asset('storage/' . $gallery->image) }}"
                                                     alt="product-nav-img">
                                             </div>
                                         </div>

@@ -20,7 +20,7 @@
                             </div>
                             <div class="blog__thumbnail mb-30">
                                 <img class="blog__thumbnail--img border-radius-10"
-                                    src="{{ asset('public/storage/' . $blog->image) }}" alt="blog-img">
+                                    src="{{ asset('storage/' . $blog->image) }}" alt="blog-img">
                             </div>
                             <div class="blog__details--content">
                                 <h3 class="blog__details--content__subtitle mb-25">{{ $blog->description }}</h3>
@@ -55,7 +55,7 @@
                                     <?php
                                     $tags = $blog->tags; // String containing tags separated by commas
                                     $tagArray = explode(',', $tags); // Split the string into an array
-                                    
+
                                     foreach ($tagArray as $tag) {
                                         echo '<li class="blog__tags--media__list"><a class="blog__tags--media__link" href="blog-details.html">' . $tag . '</a></li>';
                                     }
@@ -488,7 +488,7 @@
                                         <div class="articl__post--items__thumbnail position__relative">
                                             <a class="articl__post--items__link display-block" href="blog-details.html">
                                                 <img class="articl__post--items__img display-block"
-                                                    src="{{ asset('public/storage/' . $blog->image) }}" alt="product-img">
+                                                    src="{{ asset('storage/' . $blog->image) }}" alt="product-img">
                                             </a>
                                         </div>
                                         <div class="articl__post--items__content">

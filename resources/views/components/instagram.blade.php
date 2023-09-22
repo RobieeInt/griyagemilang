@@ -7,7 +7,7 @@
                         <div class="instagram__thumbnail position__relative">
                             <a class="instagram__thumbnail--link display-block" target="_blank"
                                 href="{{ $instagram->link }}"><img class="instagram__thumbnail--img display-block"
-                                    src="{{ asset('public/storage/' . $instagram->image) }}" alt="instagram-img">
+                                    src="{{ asset('storage/' . $instagram->image) }}" alt="instagram-img">
                                 <span class="instagram__social--icon"><svg xmlns="http://www.w3.org/2000/svg"
                                         xmlns:xlink="http://www.w3.org/1999/xlink" width="25.198" height="25.199"
                                         viewBox="0 0 25.198 25.199">
