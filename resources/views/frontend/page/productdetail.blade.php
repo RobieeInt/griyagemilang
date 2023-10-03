@@ -322,7 +322,7 @@
                                                 {{ $product->star }} )</span></li>
                                     </ul>
                                 </div>
-                                <p class="product__details--info__desc mb-20">{{ $product->description }}</p>
+                                <p class="product__details--info__desc mb-20">{!! $product->description !!}</p>
                                 <div class="product__variant">
                                     {{-- <div class="product__variant--list mb-20">
                                         <fieldset class="variant__input--fieldset">

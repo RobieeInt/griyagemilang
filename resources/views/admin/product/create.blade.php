@@ -51,9 +51,8 @@
                                 value="{{ old('short_description') }}" placeholder="Terbuat Dari Aluminium">
                         </div>
                         <div class="form-group">
-                            <label for="description">Deskripsi Panjang</label>
-                            <input type="text" class="form-control" id="description" name="description"
-                                value="{{ old('description') }}" placeholder="Terbuat Dari Aluminium">
+                            <label for="description">description</label>
+                            <textarea name="description" id="description" cols="30" rows="10">{{ old('description') }}</textarea>
                         </div>
                         {{-- <div class="form-group">
                             <label for="small-thumbnail">Gambar</label>
@@ -189,6 +188,12 @@
 
 @section('js')
     {{-- fetching dropdown category --}}
+    <script src="{{ asset('js/ckeditor/ckeditor.js') }}"></script>
+    <script>
+        CKEDITOR.replace('description', {
+            tabSpaces: 8
+        });
+    </script>
     <script>
         $(function() {
             //Initialize Select2 Elements
