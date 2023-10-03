@@ -21,7 +21,7 @@
                                 <ul class="social__shear d-flex">
                                     <li class="social__shear--list">
                                         <a class="social__shear--list__icon" target="_blank"
-                                            href="https://www.facebook.com">
+                                            href="https://www.facebook.com/DapurGemilang.DG/">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="11.239" height="20.984"
                                                 viewBox="0 0 11.239 20.984">
                                                 <path id="Icon_awesome-facebook-f" data-name="Icon awesome-facebook-f"
@@ -44,7 +44,7 @@
                                     </li>
                                     <li class="social__shear--list">
                                         <a class="social__shear--list__icon" target="_blank"
-                                            href="https://www.instagram.com">
+                                            href="https://www.instagram.com/dapur_gemilang/">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="19.497" height="19.492"
                                                 viewBox="0 0 19.497 19.492">
                                                 <path id="Icon_awesome-instagram" data-name="Icon awesome-instagram"
