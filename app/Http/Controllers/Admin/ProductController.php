@@ -69,9 +69,9 @@ class ProductController extends Controller
             'category_id' => 'required',
             'code' => 'required|unique:products',
             'name' => 'required',
-            'price' => 'required',
+            // 'price' => 'required',
             'description' => 'required',
-            'short_description' => 'required',
+            // 'short_description' => 'required',
             'star' => 'required',
             'popular' => 'required'
         ]);
@@ -122,9 +122,9 @@ class ProductController extends Controller
             'category_id' => 'required',
             'code' => 'required|unique:products,code,' . $id,
             'name' => 'required',
-            'price' => 'required',
+            // 'price' => 'required',
             'description' => 'required',
-            'short_description' => 'required',
+            // 'short_description' => 'required',
             'star' => 'required',
             'popular' => 'required'
         ]);

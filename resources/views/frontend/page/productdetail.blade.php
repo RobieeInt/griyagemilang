@@ -291,9 +291,8 @@
                         <div class="product__details--info">
                             <form action="#">
                                 <h2 class="product__details--info__title mb-15">{{ $product->name }}</h2>
-                                <div class="product__details--info__price mb-10">
+                                {{-- <div class="product__details--info__price mb-10">
                                     <span class="current__price">
-                                        {{-- format number price --}}
                                         IDR. {{ number_format($product->price) }}
                                     </span>
                                     @if ($product->old_price != null)
@@ -301,7 +300,7 @@
                                             {{ number_format($product->old_price) }}</span>
                                     @else
                                     @endif
-                                </div>
+                                </div> --}}
                                 <div class="product__details--info__rating d-flex align-items-center mb-15">
                                     <ul class="rating product__list--rating d-flex">
                                         @for ($i = 0; $i < $product->star; $i++)
