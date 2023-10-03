@@ -29,9 +29,8 @@
                                               <a
                                                   href="{{ route('productDetail', $product->slug) }}">{{ $product->name }}</a>
                                           </h3>
-                                          <div class="product__items--price">
+                                          {{-- <div class="product__items--price">
                                               <span class="current__price">
-                                                  {{-- format number price --}}
                                                   IDR. {{ number_format($product->price) }}
                                               </span>
                                               @if ($product->old_price != null)
@@ -39,7 +38,7 @@
                                                       {{ number_format($product->old_price) }}</span>
                                               @else
                                               @endif
-                                          </div>
+                                          </div> --}}
                                           {{-- <a class="product__items--action__cart--btn primary__btn" href="cart.html">
                                               <svg class="product__items--action__cart--btn__icon"
                                                   xmlns="http://www.w3.org/2000/svg" width="13.897" height="14.565"

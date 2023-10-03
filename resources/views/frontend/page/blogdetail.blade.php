@@ -55,7 +55,7 @@
                                     <?php
                                     $tags = $blog->tags; // String containing tags separated by commas
                                     $tagArray = explode(',', $tags); // Split the string into an array
-
+                                    
                                     foreach ($tagArray as $tag) {
                                         echo '<li class="blog__tags--media__list"><a class="blog__tags--media__link" href="blog-details.html">' . $tag . '</a></li>';
                                     }
@@ -486,14 +486,16 @@
                                 @forelse ($randomBlogs as $blog)
                                     <div class="articl__post--items d-flex align-items-center">
                                         <div class="articl__post--items__thumbnail position__relative">
-                                            <a class="articl__post--items__link display-block" href="blog-details.html">
+                                            <a class="articl__post--items__link display-block"
+                                                href="{{ route('blogdetail', $blog->slug) }}">
                                                 <img class="articl__post--items__img display-block"
                                                     src="{{ asset('storage/' . $blog->image) }}" alt="product-img">
                                             </a>
                                         </div>
                                         <div class="articl__post--items__content">
                                             <h4 class="articl__post--items__content--title"><a
-                                                    href="blog-details.html">{{ $blog->title }}</a></h4>
+                                                    href="{{ route('blogdetail', $blog->slug) }}">{{ $blog->title }}</a>
+                                            </h4>
                                             <span class="meta__deta text__secondary">
                                                 {{ $blog->created_at->isoFormat('dddd, D MMMM Y') }}</span>
                                         </div>
@@ -512,21 +514,21 @@
                                 }
                                 ?>
                                 {{-- <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                                        href="blog-details.html">Wooden</a></li>
+                                        href="{{ route('blogdetail', $blog->slug) }}">Wooden</a></li>
                                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                                        href="blog-details.html">Chair</a></li>
+                                        href="{{ route('blogdetail', $blog->slug) }}">Chair</a></li>
                                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                                        href="blog-details.html">Modern</a></li>
+                                        href="{{ route('blogdetail', $blog->slug) }}">Modern</a></li>
                                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                                        href="blog-details.html">Fabric </a></li>
+                                        href="{{ route('blogdetail', $blog->slug) }}">Fabric </a></li>
                                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                                        href="blog-details.html">Shoulder </a></li>
+                                        href="{{ route('blogdetail', $blog->slug) }}">Shoulder </a></li>
                                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                                        href="blog-details.html">Winter</a></li>
+                                        href="{{ route('blogdetail', $blog->slug) }}">Winter</a></li>
                                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                                        href="blog-details.html">Accessories</a></li>
+                                        href="{{ route('blogdetail', $blog->slug) }}">Accessories</a></li>
                                 <li class="widget__tagcloud--list"><a class="widget__tagcloud--link"
-                                        href="blog-details.html">Dress </a></li> --}}
+                                        href="{{ route('blogdetail', $blog->slug) }}">Dress </a></li> --}}
                             </ul>
                         </div>
                     </div>
