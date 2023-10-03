@@ -195,16 +195,56 @@ class ProductController extends Controller
     // }
 
     //uploadImage get product_id and store to product_galleries model
+    // public function uploadImage(Request $request) {
+    //     $image = $request->file('file');
+    //     $imageName = rand(). '.'. $image->getClientOriginalExtension();
+    //     // $image->move(public_path('product'),$imageName);
+    //     // $data['image'] = $request->file('image')->store('assets/product', 'public');
+    //     $image->move(public_path('storage/assets/product'),$imageName);
+    //     // $imageNameStore set assets/prodcuct $imageName
+    //     $imageNameStore = 'assets/product/'.$imageName;
+
+
+
+    //     //imageName store assets/product
+    //     // $data['image'] = $request->file('image')->store('assets/product_categories', 'public');
+    //     // $imageName = $request->file('image')->store('assets/product', 'public');
+
+    //     //save image name and path to product_galleries with $requies product_id
+    //     $data = ['product_id'=>$request->product_id,"image"=>$imageNameStore];
+    //     // DB::table("product_galleries")->insertGetId($data);
+    //     //insert ProductGalleries::insert($data);
+    //     ProductGalleries::create($data);//use eloquent method
+
+    // }
+
+    //uploadImage
     public function uploadImage(Request $request) {
+        //file max 3mb
+        $request->validate([
+            'file' => 'required|image|mimes:png,jpg,jpeg|max:5072',
+        ]);
+        // dd($request);
         $image = $request->file('file');
         $imageName = rand(). '.'. $image->getClientOriginalExtension();
         // $image->move(public_path('product'),$imageName);
         // $data['image'] = $request->file('image')->store('assets/product', 'public');
-        $image->move(public_path('storage/assets/product'),$imageName);
+        // $image->move(public_path('storage/assets/product'),$imageName);
         // $imageNameStore set assets/prodcuct $imageName
+        // $imageNameStore = 'assets/product/'.$imageName;
+
+        //resize image
+        $image_resize = Image::make($image->getRealPath());
+        //resize dimension 282x295
+        $image_resize->resize(846, 885);
+
+        //check public path if no folder create
+        if (!file_exists(public_path('storage/assets/product'))) {
+            mkdir(public_path('storage/assets/product'), 0777, true);
+        }
+        //save image
+        $image_resize->save(public_path('storage/assets/product/'.$imageName));
         $imageNameStore = 'assets/product/'.$imageName;
-
-
 
         //imageName store assets/product
         // $data['image'] = $request->file('image')->store('assets/product_categories', 'public');
