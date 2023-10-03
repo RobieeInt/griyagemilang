@@ -125,9 +125,8 @@
                                         <h3 class="product__items--content__title h4"><a
                                                 href="{{ route('productDetail', $product->slug) }}">{{ $product->name }}</a>
                                         </h3>
-                                        <div class="product__items--price">
+                                        {{-- <div class="product__items--price">
                                             <span class="current__price">
-                                                {{-- format number price --}}
                                                 IDR. {{ number_format($product->price) }}
                                             </span>
                                             @if ($product->old_price != null)
@@ -135,7 +134,7 @@
                                                     {{ number_format($product->old_price) }}</span>
                                             @else
                                             @endif
-                                        </div>
+                                        </div> --}}
 
                                         <ul class="rating product__items--rating d-flex justify-content-center">
                                             {{-- check $product->star and loop star --}}

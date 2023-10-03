@@ -31,8 +31,8 @@
                     </svg>
                 </div>
                 <div class="shipping__style2--content">
-                    <h2 class="shipping__style2--content__title">SECURE SHOPPING</h2>
-                    <p class="shipping__style2--content__desc">Free order over $300</p>
+                    <h2 class="shipping__style2--content__title">Gratis Konsultasi</h2>
+                    <p class="shipping__style2--content__desc">Gratis Biaya Konsultasi Design</p>
                 </div>
             </div>
             <div class="shipping__style2--items d-flex align-items-center">
@@ -100,8 +100,8 @@
 
                 </div>
                 <div class="shipping__style2--content">
-                    <h2 class="shipping__style2--content__title">ACCEPT PAYMENT</h2>
-                    <p class="shipping__style2--content__desc">Visa, Paypal, Master</p>
+                    <h2 class="shipping__style2--content__title">Bebas Biaya Design</h2>
+                    <p class="shipping__style2--content__desc">Wujudkan design impian anda</p>
                 </div>
             </div>
             <div class="shipping__style2--items d-flex align-items-center">
@@ -122,8 +122,8 @@
                     </svg>
                 </div>
                 <div class="shipping__style2--content">
-                    <h2 class="shipping__style2--content__title">30 DAY RETURN</h2>
-                    <p class="shipping__style2--content__desc">30 day guarantee</p>
+                    <h2 class="shipping__style2--content__title">Special Diskon</h2>
+                    <p class="shipping__style2--content__desc">Dapatkan Diskon Special kami</p>
                 </div>
             </div>
             <div class="shipping__style2--items d-flex align-items-center">
@@ -141,8 +141,7 @@
                 </div>
                 <div class="shipping__style2--content">
                     <h2 class="shipping__style2--content__title">24/7 SUPPORT</h2>
-
-                    <p class="shipping__style2--content__desc">Support every time</p>
+                    <p class="shipping__style2--content__desc">Kami Siap Membantu Anda </p>
                 </div>
             </div>
         </div>
