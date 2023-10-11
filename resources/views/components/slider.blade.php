@@ -6,35 +6,56 @@
                     <div class="hero__slider2--wrapper swiper-wrapper">
                         <div class="swiper-slide ">
                             <div class="hero__slider2--items hero__slider--bg2 slider1"
-                                style="background-image: url({{ asset('ggm/assets/img/slider/ya2.jpg') }})">
+                                style="background-image: url({{ asset('ggm/assets/img/slider/1.png') }})">
                                 <div class="hero__slider2--items__inner">
                                     <div class="slider__content2 text-center">
-                                        <p class="slider__content2--desc desc1 text-white mb-15">surem
-                                            Beautiful Your Home</p>
-                                        <h2 class="slider__content2--maintitle text-white h1">Build Your Home
+                                        <p class="slider__content2--desc desc1 text-white mb-15">Buat Dapur Impian Anda
+                                        </p>
+                                        <h2 class="slider__content2--maintitle text-white h1">Wujudkan Dapur Impian Anda
+                                            Bersama
                                             <br>
-                                            With Furniture
+                                            Dapur Gemilang
                                         </h2>
-                                        <a class="slider__content2--btn primary__btn" href="shop.html"
-                                            rel="nofollow">Get Disscount</a>
+                                        <a class="slider__content2--btn primary__btn" href="#" rel="nofollow">Get
+                                            Disscount</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="swiper-slide ">
                             <div class="hero__slider2--items hero__slider--bg2 slider2"
-                                style="background-image: url({{ asset('ggm/assets/img/slider/ya.jpg') }})">
+                                style="background-image: url({{ asset('ggm/assets/img/slider/2.png') }})">
                                 >
                                 <div class="hero__slider2--items__inner">
                                     <div class="slider__content2 text-center">
                                         <p class="slider__content2--desc desc1 text-white mb-15">Making
                                             Beautiful Your Home</p>
-                                        <h2 class="slider__content2--maintitle text-white h1">Build Your Home
+                                        <h2 class="slider__content2--maintitle text-white h1">Wujudkan Dapur Impian Anda
+                                            Bersama
                                             <br>
-                                            With Furniture
+                                            Dapur Gemilang
                                         </h2>
-                                        <a class="slider__content2--btn primary__btn" href="shop.html"
-                                            rel="nofollow">Get Disscount</a>
+                                        <a class="slider__content2--btn primary__btn" href="#" rel="nofollow">Get
+                                            Disscount</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide ">
+                            <div class="hero__slider2--items hero__slider--bg2 slider2"
+                                style="background-image: url({{ asset('ggm/assets/img/slider/3.png') }})">
+                                >
+                                <div class="hero__slider2--items__inner">
+                                    <div class="slider__content2 text-center">
+                                        <p class="slider__content2--desc desc1 text-white mb-15">Making
+                                            Beautiful Your Home</p>
+                                        <h2 class="slider__content2--maintitle text-white h1">Wujudkan Dapur Impian Anda
+                                            Bersama
+                                            <br>
+                                            Dapur Gemilang
+                                        </h2>
+                                        <a class="slider__content2--btn primary__btn" href="#" rel="nofollow">Get
+                                            Disscount</a>
                                     </div>
                                 </div>
                             </div>
@@ -45,11 +66,11 @@
                                     <div class="slider__content2 text-center">
                                         <p class="slider__content2--desc desc1 text-white mb-15">Making
                                             Beautiful Your Home</p>
-                                        <h2 class="slider__content2--maintitle text-white h1">Build Your Home
+                                        <h2 class="slider__content2--maintitle text-white h1">Wujudkan Dapur Impian Anda Bersama
                                             <br>
-                                            With Furniture
+                                            Dapur Gemilang
                                         </h2>
-                                        <a class="slider__content2--btn primary__btn" href="shop.html"
+                                        <a class="slider__content2--btn primary__btn" href="#"
                                             rel="nofollow">Get Disscount</a>
                                     </div>
                                 </div>
@@ -62,13 +83,13 @@
             </div>
             <div class="col-lg-3 banner2__col--3">
                 <div class="banner__sidebar--two banner__items banner__sidebar2">
-                    <a class="banner__items--thumbnail position__relative" href="shop.html"><img
+                    <a class="banner__items--thumbnail position__relative" href="#"><img
                             class="banner__items--thumbnail__img banner__sidebar2--img"
-                            src="{{ asset('ggm/assets/img/banner/wall1.jpg') }}" alt="banner-img">
+                            src="{{ asset('ggm/assets/img/banner/MM.png') }}" alt="banner-img">
                         <div class="banner__content--style2 banner__sidebar2--content">
-                            <h3 class="banner__content--style2__subtitle">Limited Edition</h3>
-                            <h2 class="banner__content--style2--title">Official Chair </h2>
-                            <span class="banner__content--style2__link">Know More
+                            <h3 class="banner__content--style2__subtitle">Penawaran Menarik</h3>
+                            <h2 class="banner__content--style2--title">Dapur Impian</h2>
+                            <span class="banner__content--style2__link">Hubungi Kami
                                 <svg xmlns="http://www.w3.org/2000/svg" width="10.902" height="9.085"
                                     viewBox="0 0 10.902 9.085">
                                     <path id="right-arrow"
