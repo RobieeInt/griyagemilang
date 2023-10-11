@@ -70,7 +70,7 @@
                                             @endif
                                         </div>
                                         <ul class="product__items--action style2">
-                                            <li class="product__items--action__list style2">
+                                            {{-- <li class="product__items--action__list style2">
                                                 <a class="product__items--action__btn style2" data-open="modal1"
                                                     href="javascript:void(0)">
                                                     <svg class="product__items--action__btn--svg"
@@ -86,7 +86,7 @@
                                                     </svg>
                                                     <span class="visually-hidden">Quick View</span>
                                                 </a>
-                                            </li>
+                                            </li> --}}
                                             {{-- <li class="product__items--action__list style2">
                                                 <a class="product__items--action__btn style2" href="wishlist.html">
                                                     <svg class="product__items--action__btn--svg"
