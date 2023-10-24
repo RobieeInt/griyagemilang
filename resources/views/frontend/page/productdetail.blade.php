@@ -35,7 +35,8 @@
     <main class="main__content_wrapper">
 
         <!-- Start breadcrumb section -->
-        <section class="breadcrumb__section breadcrumb__bg">
+        <section class="breadcrumb__section breadcrumb__bg"
+            style="background-image: url({{ asset('ggm/assets/img/banner/1920x300.jpg') }})">
             <div class="container">
                 <div class="row row-cols-1">
                     <div class="col">
