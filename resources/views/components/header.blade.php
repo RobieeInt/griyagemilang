@@ -78,7 +78,7 @@
                 </div>
                 <div class="main__logo">
                     <h1 class="main__logo--title"><a class="main__logo--link" href="{{ route('landing-page') }}"><img
-                                class="main__logo--img" src="{{ asset('ggm/assets/img/logo/nav-log2.png') }}"
+                                class="main__logo--img" src="{{ asset('ggm/assets/img/logo/nav-log3.jpg') }}"
                                 alt="logo-img"></a>
                     </h1>
                 </div>
@@ -125,8 +125,9 @@
                         </div>
                     </form>
                 </div> --}}
-                <div class="header__search--widget d-none d-lg-block">
-                    Dapur Gemilang
+                <div class="header__search--widget d-none d-lg-block"
+                    style="font-family: Trebuchet MS; font-weight: 900; font-size: 28px">
+                    DAPUR GEMILANG
                 </div>
                 <div class="header__account">
                     <ul class="d-flex">
