@@ -7,9 +7,9 @@
                         <h3 class="banner__discount--content__subtitle">Dapatkan Penawaran Menarik</h3>
                         <h2 class="banner__discount--content__title">Top Trending
                             Furniture</h2>
-                        <p class="banner__discount--content__desc">Lorem ipsum dolor sit amet, consecteturiuyr
-                            icing elit,sed do eiusmod ut labore et.
-                            Lorem ipsum dolor sit amet, consecteturop.</p>
+                        <p class="banner__discount--content__desc">Kitchen set cantik dan elegan, bisa di-custom sesuai
+                            gaya dan kebutuhan Anda. Tersedia pilihan warna dan material berkualitas tinggi untuk dapur
+                            impian yang nyaman dan fungsional.</p>
                         <a class=" primary__btn btn__style2" target="_blank"
                             href="https://api.whatsapp.com/send?phone={{ $contact->whatsapp }}&text=Halo%20DapurGemilang%20saya%20ingin%20Penawaran%20"
                             rel="nofollow">Dapatkan Penawaran</a>
