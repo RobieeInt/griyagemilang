@@ -79,7 +79,7 @@
                 <div class="main__logo">
                     <h1 class="main__logo--title"><a class="main__logo--link" href="{{ route('landing-page') }}"><img
                                 class="main__logo--img" src="{{ asset('ggm/assets/img/logo/logodgrm.png') }}"
-                                width="75" height="75" alt="logo-img"></a>
+                                width="130" height="130" alt="logo-img"></a>
                     </h1>
                 </div>
                 {{-- <div class="header__search--widget d-none d-lg-block">
@@ -128,7 +128,7 @@
                 <div class="header__search--widget d-none d-lg-block"
                     style="font-family: Trebuchet MS; font-weight: 900; font-size: 28px">
                     <img class="main__logo--img" src="{{ asset('ggm/assets/img/logo/logodgrm.png') }}" alt="logo-img"
-                        width="75" height="75">
+                        width="130" height="130">
                 </div>
                 <div class="header__account">
                     <ul class="d-flex">

@@ -4,8 +4,8 @@
             <div class="categories__content">
                 <p class="categories__content--desc desc1">Dapatkan Penawaran Menarik</p>
                 <h2 class="categories__content--title">Ciptakan Kemewahan Dapur Impian anda</h2>
-                <p class="categories__content--desc">Dapatkan Penawaran Terbaik Dari kami. <br> Nanya-nanya Dulu Gratis
-                    Kok</p>
+                <p class="categories__content--desc">Dapatkan Penawaran Terbaik Dari kami. <br> Free Konsultasi dengan
+                    team design kami</p>
                 <ul class="categories__product d-flex">
                     <li class="categories__product--list">
                         <a class="categories__product--icons" target="_blank"
