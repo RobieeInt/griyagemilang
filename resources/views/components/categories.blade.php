@@ -2,9 +2,10 @@
     <div class="container">
         <div class="categories__inner d-flex align-items-center">
             <div class="categories__content">
-                <p class="categories__content--desc desc1">Dapatkan Penawaran Menarik</p>
+                <p class="categories__content--desc desc1"></p>
                 <h2 class="categories__content--title">Ciptakan Kemewahan Dapur Impian anda</h2>
-                <p class="categories__content--desc"> Free Konsultasi dengan team design kami</p>
+                <p class="categories__content--desc">Dapatkan Penawaran Terbaik Dari kami. <br> Free Konsultasi dengan
+                    team design kami</p>
                 <ul class="categories__product d-flex">
                     <li class="categories__product--list">
                         <a class="categories__product--icons" target="_blank"
